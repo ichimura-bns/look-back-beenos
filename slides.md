@@ -1,24 +1,61 @@
 ---
 # You can also start simply with 'default'
-theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply unocss classes to the current slide
+theme: default
+title: look back BEENOS intern
 class: text-center
-# https://sli.dev/features/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+fonts:
+  sans: Zen Maru Gothic
+  serif: Zen Maru Gothic
+  mono: Shippori Mincho
 ---
 
+# BEENOS インターン振り返り
+
+<div class="blur-circle-positive absolute top-30 left-30"></div>
+
+<style>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .blur-circle-positive {
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    background: rgba(145, 130, 32, 0.4);
+    filter: blur(110px);
+    border-radius:0%;
+    transform: rotate(30deg);
+    z-index: 100;
+  }
+}
+</style>
+
+---
+src: ./pages/greet.md
+---
+
+---
+src: ./pages/target.md
+---
+
+---
+src: ./pages/task.md
+---
+
+---
+src: ./pages/result.md
+---
+
+---
+src: ./pages/learning.md
+---
+
+---
+src: ./pages/closing.md
+---
